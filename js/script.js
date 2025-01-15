@@ -44,9 +44,9 @@ nextButton.addEventListener('click', () => {
 // Fungsi untuk slider otomatis
 function autoSlide() {
     setInterval(() => {
-        currentSlide = (currentSlide + 1) % totalSlides; // Beralih ke slide berikutnya
+        currentSlide = (currentSlide + 1) % totalSlides;
         updateSlide();
-    }, 3000); // Interval 3 detik
+    }, 3000);
 }
 
 // Menampilkan slider pertama
@@ -59,16 +59,16 @@ const navLinks = document.querySelectorAll('header nav ul li a');
 // Menambahkan fungsi scroll untuk setiap link di menu
 navLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-        event.preventDefault(); // Mencegah reload halaman saat klik
+        event.preventDefault();
 
-        const targetId = event.target.getAttribute('href').substring(1); // Ambil ID target
+        const targetId = event.target.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
 
         // Jika target ditemukan, scroll ke bagian tersebut
         if (targetSection) {
             targetSection.scrollIntoView({
-                behavior: 'smooth', // Efek scroll halus
-                block: 'start' // Posisi scroll di bagian atas section
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     });
