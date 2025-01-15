@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adla Fayyaz Web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+
 </head>
 <body>
-    
+    <!-- Logo & Navigation -->
+    <header class="main header">
+        <!-- Logo -->
+         <div class="logo-icon">
+            <img src="assets/logo.png" alt="Logo" style="width: 50px; height:50px">
+        </div>
+
+        <!-- Navigation -->
+         <nav>
+            <ul>
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page">
+            <h1>Hi <span id="user-greeting">User</span>, Welcome to our website.</h1>
+            <p class="sub-greeting">Feel free to look around and message us if you have any questions.</p>
+        </section>
+
+        <!-- Slider -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="assets/photo-1706437940550-57ad678c3ef5.jpeg" alt="Slide 1"></div>
+                    <div class="slide"><img src="assets/617d1a1dea5f9.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="assets/pexels-pixabay-290548.jpg" alt="Slide 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me">
+            <h1>About Me</h1>
+            <div class="about-me">
+                <div class="about-me-image">
+                    <img src="assets/1722622271020.jpeg" alt="About Me Image">
+                </div>
+                <div class="about-me-content">
+                    <h2>Muhammad Adla Fayyaz Fauzy</h2>
+                    <p>Saya sedang mengejar gelar Sarjana S1 Sistem Informasi dengan keinginan yang kuat dalam memahami pengembangan web dan bisnis. Saya sangat tertarik untuk mempelajari teknologi baru dan mengeksplorasi solusi inovatif untuk masalah kompleks. Saya suka menggabungkan kreativitas dengan pemikiran analitis dan bekerja sama dalam proyek. Minat saya meliputi menguasai framework web, memahami dinamika pasar, dan menciptakan pengalaman digital yang berfokus pada pengguna. Saya bertujuan untuk terus mengembangkan keterampilan saya dan memberikan kontribusi yang berarti di lingkungan yang dinamis dan didorong oleh teknologi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+        </section>
+
+        <!-- Message Us -->
+        <section id="message">  
+            <h1>Message Us</h1>  
+            <div class="form-section">  
+                <form id="userForm">  
+                    <div class="form-group">  
+                        <label for="sender-name">Nama:</label>
+                        <div class="input-group">
+                          <input type="text" id="sender-name" name="sender-name" placeholder="Nama">  
+                          <span class="error-message" id="name-error"></span>  
+                        </div>
+                    </div>
+                    <div class="form-group">  
+                        <label for="birthdate">Tanggal Lahir:</label>
+                        <div class="input-group">
+                          <input type="date" id="birthdate" name="birthdate">  
+                          <span class="error-message" id="birthdate-error"></span>
+                        </div>
+                    </div>  
+                    <div class="form-group">  
+                        <label>Jenis Kelamin:</label>
+                        <div class="input-group">
+                          <div class="radio-group">
+                            <div class="radio-option">
+                              <input type="radio" id="male" name="gender" value="male">  
+                              <label for="male">Male</label>
+                            </div>
+                            <div class="radio-option">
+                              <input type="radio" id="female" name="gender" value="female">  
+                              <label for="female">Female</label>
+                            </div>
+                          </div> 
+                          <span class="error-message" id="gender-error"></span>
+                        </div>
+                    </div>  
+                    <div class="form-group">  
+                        <label for="message-content">Pesan:</label>  
+                        <div class="input-group">
+                          <textarea id="message-content" name="message-content" placeholder="Pesan"></textarea>  
+                          <span class="error-message" id="message-error"></span>
+                        </div>
+                    </div>  
+                    <button type="submit">Submit</button>  
+                </form>  
+                <div class="preview-message">
+                  <div class="preview-item">
+                    <label>Nama:</label>
+                    <span id="sender-full-name"></span>
+                  </div>
+                  <div class="preview-item">
+                    <label>Tanggal Lahir:</label>
+                    <span id="sender-birth-date"></span>  
+                  </div>
+                  <div class="preview-item">
+                    <label>Jenis Kelamin:</label>
+                    <span id="sender-gender"></span>  
+                  </div>
+                  <div class="preview-item">
+                    <label>Pesan:</label>
+                    <span id="sender-messages"></span>  
+                  </div>
+                </div>  
+            </div>             
+        </section>        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Adla Fayyaz</p>
+    </footer>
 </body>
 </html>
